@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paracanteen Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+		<div class="logo-icon">
+    			<img src="logo.png" alt="Logo Paracanteen">
+		</div>
+
+                <div class="logo-text">
+                    paracanteen
+                </div>
+
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-house"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="menu-title">
+                MANAGEMENT
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-dot"></i>
+                        Data Makan
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-calendar"></i>
+                        Schedule Vendor
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        Validasi User Makan
+                        <span class="dot"></span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="menu-title">
+                KUPON MANAGEMENT
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-right-left"></i>
+                        Penukaran Kupon
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-cube"></i>
+                        Update Item
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main-content">
+
+            <!-- Topbar -->
+
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" placeholder="Search...">
+
+                </div>
+
+                <div class="avatar">
+
+                    <img src="https://i.pravatar.cc/100" alt="avatar">
+
+                    <span class="status"></span>
+
+                </div>
+
+            </header>
+
+            <!-- Dashboard -->
+
+            <div class="dashboard">
+
+                <!-- LEFT -->
+
+                <section class="content-left">
+
+                    <div class="card">
+
+                        <div class="card-title">
+
+                            <i class="fa-solid fa-qrcode"></i>
+
+                            <h2>Validasi Makan RFID</h2>
+
+                        </div>
+
+                        <div class="rfid-box">
+
+                            <div class="rfid-icon">
+                                <i class="fa-regular fa-credit-card"></i>
+                            </div>
+
+                            <h1>Tempelkan Kartu RFID</h1>
+
+                            <p>
+                                Scan kartu karyawan untuk validasi makan siang
+                            </p>
+
+                            <input type="text"
+                                placeholder="Scan RFID...">
+
+                            <button class="btn">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                                PROSES VALIDASI
+
+                            </button>
+
+                            <div class="info-box">
+
+                                <i class="fa-solid fa-circle-info"></i>
+
+                                Sistem siap menerima scan RFID.
+                                Pastikan reader terhubung.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- RIGHT -->
+
+                <aside class="right-panel">
+
+                    <div class="card">
+
+                        <div class="card-title">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <h2>Informasi Sistem</h2>
+
+                        </div>
+
+                        <div class="day-card">
+
+                            <h3>Sabtu</h3>
+
+                            <span>Week 28</span>
+
+                        </div>
+
+                        <div class="filter">
+
+                            <p>FILTER SHIFT</p>
+
+                            <div class="shift-grid">
+
+                                <button class="active">
+                                    Semua
+                                </button>
+
+                                <button>
+                                    Shift 1
+                                </button>
+
+                                <button>
+                                    Shift 2
+                                </button>
+
+                                <button>
+                                    Shift 3
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <small>Total Order Hari Ini</small>
+
+                            <h2>282</h2>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <small>Jumlah Tapping</small>
+
+                            <h2>97</h2>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <small>Sisa Order</small>
+
+                            <h2>185</h2>
+
+                        </div>
+
+                        <div class="history">
+
+                            <h3>
+
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                                Riwayat Validasi Hari Ini
+
+                            </h3>
+
+                            <div class="history-item">
+
+                                <div class="avatar-small">
+                                    AN
+                                </div>
+
+                                <div>
+
+                                    <strong>ANISA HASBIYA</strong>
+
+                                    <p>Shift 1</p>
+
+                                </div>
+
+                                <span>12:46</span>
+
+                            </div>
+
+                            <div class="history-item">
+
+                                <div class="avatar-small">
+                                    RD
+                                </div>
+
+                                <div>
+
+                                    <strong>RUDI</strong>
+
+                                    <p>Shift 2</p>
+
+                                </div>
+
+                                <span>12:39</span>
+
+                            </div>
+
+                            <div class="history-item">
+
+                                <div class="avatar-small">
+                                    FH
+                                </div>
+
+                                <div>
+
+                                    <strong>FAHMI</strong>
+
+                                    <p>Shift 1</p>
+
+                                </div>
+
+                                <span>12:31</span>
+
+                            </div>
+
+                            <div class="history-item">
+
+                                <div class="avatar-small">
+                                    DS
+                                </div>
+
+                                <div>
+
+                                    <strong>DWI SAPUTRA</strong>
+
+                                    <p>Shift 3</p>
+
+                                </div>
+
+                                <span>12:20</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </main>
+
+    </div>
+<audio id="audioMakan" src="makan.mp3"></audio>
+<audio id="audioKupon" src="kupon.mp3"></audio>
+<audio id="audioSudah" src="sudahmakan.mp3"></audio>
+<audio id="audioBukan" src="andabukan.mp3"></audio>
+
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <div id="popupIcon" class="popup-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <h2 id="popupTitle">Selamat Makan</h2>
+
+        <p id="popupMessage">
+            Selamat menikmati makan siang.
+        </p>
+    </div>
+</div>
+
+<script>
+
+let tapping = 0;
+
+const popup = document.getElementById("popup");
+const icon = document.getElementById("popupIcon");
+const title = document.getElementById("popupTitle");
+const message = document.getElementById("popupMessage");
+
+function play(id){
+
+document.getElementById(id).pause();
+document.getElementById(id).currentTime=0;
+document.getElementById(id).play();
+
+}
+
+function showPopup(type,judul,pesan,audio){
+
+icon.className="popup-icon "+type;
+
+switch(type){
+
+case "success":
+icon.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+break;
+
+case "warning":
+icon.innerHTML='<i class="fa-solid fa-ticket"></i>';
+break;
+
+case "error":
+icon.innerHTML='<i class="fa-solid fa-circle-xmark"></i>';
+break;
+
+case "info":
+icon.innerHTML='<i class="fa-solid fa-circle-info"></i>';
+break;
+
+}
+
+title.innerHTML=judul;
+message.innerHTML=pesan;
+
+popup.classList.add("show");
+
+play(audio);
+
+setTimeout(()=>{
+popup.classList.remove("show");
+},3000);
+
+}
+
+document.querySelector(".btn").addEventListener("click",function(){
+
+tapping++;
+
+switch(tapping){
+
+case 1:
+
+showPopup(
+"success",
+"SELAMAT MAKAN",
+"Silakan menikmati makan siang.",
+"audioMakan"
+);
+
+break;
+
+case 2:
+
+showPopup(
+"warning",
+"ANDA KUPON MERAH",
+"Silakan menuju petugas kantin.",
+"audioKupon"
+);
+
+break;
+
+case 3:
+
+showPopup(
+"error",
+"MOHON MAAF",
+"Anda sudah makan hari ini.",
+"audioSudah"
+);
+
+break;
+
+default:
+
+showPopup(
+"info",
+"ANDA TIDAK TERDAFTAR",
+"Silakan hubungi administrator.",
+"audioBukan"
+);
+
+}
+
+});
+
+</script>
+
+
+</body>
+
+</html>
